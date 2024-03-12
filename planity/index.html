@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recode Planity</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <!--START - HEADER-->
     <header>
-        
+        <img src="./assets/img/logo.svg" alt="Planity Logo">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="coiffeur.html">Coiffeur</a>
+                </li>
+
+                <li>
+                    <a href="manucure.html">Manucure</a>
+                </li>
+
+                <li>
+                    <a href="institut-de-beaute.html">Institut de Beauté</a>
+                </li>
+
+                <li>
+                    <a href="mag.html">Mag</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div>
+            <button type="button">Ajouter votre établissement</button>
+            <button type="button">Se connecter</button>
+        </div>
     </header>
+    <!--END - HEADER-->    
+
+    <!--START - MAIN-->
+    <main>
+        <section>
+            <h1>Vos rendez-vous beauté en ligne</h1>
+            <p>Simple • Immédiat • 24/24</p>
+
+            <form action="" method="get">
+                <label>Que cherchez-vous? <span style="color:red;">*</span>
+                    <input type="text" name="service" value="" placeholder="Nom du salon, type de prestation" required>
+                </label>
+
+                <label>Où
+                    <input type="text" name="city" value="" placeholder="Adresse, ville...">
+                </label>
+                
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+    </main>
+    <!--END - MAIN-->
 </body>
+
 </html>
