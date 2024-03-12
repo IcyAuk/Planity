@@ -18,7 +18,7 @@ ul, ol{
     box-sizing: border-box;
 }
 
-button {
+button, input {
     border-width: 0px;
     background-color: transparent;
 }

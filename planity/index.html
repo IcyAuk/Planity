@@ -11,7 +11,8 @@
 
 <body>
     <!--START - HEADER-->
-    <header class="header flux">
+    <header class="header">
+        <div class="header__container flux">
         <img class="header__logo" src="./assets/img/logo.svg" alt="Planity Logo">
 
         <nav class="header__nav">
@@ -40,9 +41,10 @@
         </nav>
 
         <div class="header__quick-action">
-            <button class="header__button" type="button">Ajouter votre établissement</button>
-            <button class="header__button header__button--black" type="button">Se connecter</button>
+            <button class="button" type="button">Ajouter votre établissement</button>
+            <button class="button button--black" type="button">Se connecter</button>
         </div>
+    </div>
     </header>
     <!--END - HEADER-->    
 
@@ -53,19 +55,21 @@
             <h1 class="hero__title">Vos rendez-vous beauté en ligne</h1>
             <p class="hero__description">Simple • Immédiat • 24/24</p>
 
-            <form class="hero__form" action="" method="get">
-                <label>
-                    <span class="hero__label">Que cherchez-vous?</span>
-                    <input class="hero__input" type="text" name="service" value="" placeholder="Nom du salon, type de prestation" required>
-                </label>
+            <form class="hero__search-bar" action="" method="get">
 
-                <label>
+                <div class="hero__field">
+                    <label class="hero__label">Que cherchez-vous?</label>
+                    <input class="hero__input" type="text" name="service" value="" placeholder="Nom du salon, type de prestation" required>
+                </div>
+                
+                <label class="hero__field">
                     <span class="hero__label">Où?</span>
-                    <input type="text" name="city" value="" placeholder="Adresse, ville...">
+                    <input class="hero__input" type="text" name="city" value="" placeholder="Adresse, ville...">
                 </label>
                 
-                <button type="submit">Rechercher</button>
+                <button class="button button--black" type="submit">Rechercher</button>
             </form>
+
         </section>
         <!--END - HERO-->
     </main>
